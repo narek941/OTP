@@ -1,0 +1,46 @@
+@use '@styles/index.scss' as *;
+
+.general {
+  width: 488px;
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.input {
+  width: var(--otp-input-Width);
+  height: var(--otp-input-Height);
+  font-size: var(--otp-input-FontSize);
+  line-height: var(--otp-input-LineHeight);
+  font-weight: var(--otp-input-FontWeight);
+  padding: 5px;
+  color: var(--otp-input-ColorText);
+  border: var(--otp-input-Border);
+  border-radius: 6px;
+  background: var(--otp-input-Bg);
+
+  outline-color: var(--otp-input-outline-color);
+  text-align: center;
+
+  &::placeholder {
+    color: var(--otp-input-placeholder-ColorText);
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.errorMsg {
+  position: absolute;
+  left: 50%;
+  bottom: var(--error-Bottom);
+  transform: translate(-50%, 100%);
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}
+.invalidInput {
+  border: var(--error-Border);
+}

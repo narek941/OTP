@@ -1,0 +1,33 @@
+.wrapper {
+  padding: 70px 20px 90px;
+  .button {
+    max-width: 190px;
+    width: 100%;
+  }
+}
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--avatar-2fa-Bg);
+  border: var(--avatar-2fa-Border);
+  backdrop-filter: blur(4px);
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.heading-2fa {
+  margin: var(--heading-2fa-Margin);
+  font-size: var(--heading-2fa-FontSize);
+  font-weight: var(--heading-2fa-FontWeight);
+  line-height: var(--heading-2fa-LineHeight);
+}
+
+.subTitle {
+  font-size: var(--subTitle-2fa-FontSize);
+  font-weight: var(--subTitle-2fa-FontWeight);
+  line-height: var(--subTitle-2fa-LineHeight);
+  margin-bottom: 0;
+}
